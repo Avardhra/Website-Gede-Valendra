@@ -3,6 +3,7 @@ import MainLayout from "../mainLayout"
 export default function Experience() {
     return (
         <main>
+            
             <MainLayout />
             <div className="position w-full min-h-[100vh] p-[3%] sm:px-[4%] md:px-[6%] lg:px-[10%] flex flex-col gap-4">
             <ul className="relative max-w-[100vh] border-l-4 border-black/20 flex flex-col gap-5">
