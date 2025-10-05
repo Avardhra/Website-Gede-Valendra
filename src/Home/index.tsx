@@ -11,6 +11,7 @@ export default function Home() {
                         <div className="max-w-[100vh] w-full flex flex-col gap-5 items-center lg:items-start">
                                 <h1 className="text-4xl font-bold">Gede Valendra</h1>
                                 <div className="flex flex-col gap-2">
+                                        <p>Halslo, kenalin gua Gede Valendra seorang Mahasiswa aktif Teknik Informatika Institut Teknologi Sumatera.</p>
                                         <p>Kerja sama tim, berkolaborasi, pengembangan skills adalah deskripsi singkat mengenai pribadi saya.</p>
                                 </div>
                                 <div className="flex gap-4 bg-white p-2 rounded shadow-lg w-fit">
