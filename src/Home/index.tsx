@@ -1,4 +1,4 @@
-import gue from "../assets/img/gue.png";
+import gue from "/assets/img/gue.png";
 
 export default function Home() {
     return (
