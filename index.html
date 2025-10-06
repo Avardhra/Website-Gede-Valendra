@@ -1,14 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gede Valendra</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gede Valendra | Web</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <style>
+    <style>
         ::-webkit-scrollbar {
             display: none;
         }
@@ -29,7 +28,6 @@
         body {
             position: relative;
             font-family: Luofuchun, sans-serif;
-            color: black;
         }
 
         main {
@@ -48,16 +46,254 @@
             border: 1px solid rgb(222, 222, 222);
         }
 
-        .hoverBtnNavMain:hover {
-            background-color: rgb(239, 239, 239);
-            outline: 0.1px solid rgb(146, 146, 146);
-        }
         ._ulBagInf-:has(> li:only-child) {
         grid-template-columns: 1fr !important;
     }
     </style>
-  <body>
-    <div id="root" class="w-full"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+</head>
+
+<body>
+    <!-- Navigasi Bottom Kecew -->
+    <div class="fixed bottom-[5vh] w-full flex justify-center items-center z-[1000]">
+        <div class="outlineKece w-fit p-2 px-3 bg-white rounded-[100px] shadow-lg">
+            <ul class="flex justify-center items-center gap-4">
+                <button id="#H-ome_" class="flex flex-col justify-center items-center gap-0 hoverBtnNavMain w-[12vh] h-[6vh] rounded-[100px] bg-black/5 outline outline-1 outline-gray-300">
+                    <i class="bx bx-home text-2xl"></i>
+                    <span class="relative text-sm top-[-6px]">Home</span>
+                </button>
+                <button id="#P-roject_" class="flex flex-col items-center gap-0 hoverBtnNavMain w-[12vh] h-[6vh] rounded-[100px] bg-black/5 outline outline-1 outline-gray-300">
+                    <i class="bx bx-folder text-2xl"></i>
+                    <span class="relative text-sm top-[-6px]">Project</span>
+                </button>
+                <button id="#E-xperience_" class="flex flex-col items-center gap-0 hoverBtnNavMain w-[12vh] h-[6vh] rounded-[100px] bg-black/5 outline outline-1 outline-gray-300">
+                    <i class="bx bx-briefcase text-2xl"></i>
+                    <span class="relative text-sm top-[-6px]">Experience</span>
+                </button>
+            </ul>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="fixed top-0 header w-full h-[6vh] bg-white shadow-lg rounded-b flex items-center px-5 z-[999]">
+        <ul class="w-full flex justify-between items-center">
+            <li>
+                <h1>Avardhra</h1>
+            </li>
+            <li class="flex items-center gap-4">
+                <button>
+                    <i class="outlineKece rounded-[100%] p-2 text-yellow-400 bx bxs-sun"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Main Section 1 -->
+    <main class="position w-full min-h-[100vh] p-[3%] sm:px-[4%] md:px-[6%] lg:px-[10%] flex flex-col gap-4">
+        <div class="position mt-[6vh] w-full flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
+            <div class="lg:hidden relative w-full h-fit flex justify-center items-center">
+
+                <img src="assets/img/gue.png" alt="Gede Valendra" class="w-[60%] md:w-48 md:h-48 lg:w-[50vh] lg:h-[50vh] bg-white rounded-full object-cover shadow-lg">
+                <span class="absolute bottom-0 bg-white px-10 py-1 rounded-[100px] shadow-lg outline outline-1 outline-black/20">Programmer</span>
+            </div>
+            <div class="max-w-[100vh] w-full flex flex-col gap-5 items-center lg:items-start">
+                <h1 class="text-4xl font-bold">Gede Valendra</h1>
+                <div class="flex flex-col gap-2">
+                    <p>Hallo, kenalin gua Gede Valendra seorang Mahasiswa aktif Teknik Informatika Institut Teknologi Sumatera.</p>
+                    <p>Kerja sama tim, berkolaborasi, pengembangan skills adalah deskripsi singkat mengenai pribadi saya.</p>
+                </div>
+                <div class="flex gap-4 bg-white p-2 rounded shadow-lg w-fit">
+                    <a href="#" class="flex items-center gap-2 outline outline-1 outline-black/20 rounded p-2 transition-transform duration-200 hover:scale-95 hover:bg-black hover:text-white hover:outline-black">
+                        <i class="bx bx-phone"></i> Hubungi
+                    </a>
+                    <a href="#" class="flex items-center gap-2 outline outline-1 outline-black/20 rounded p-2 transition-transform duration-200 hover:scale-95 hover:bg-black hover:text-white hover:outline-black">
+                        <i class="bx bx-download"></i> Unduh Portfolio
+                    </a>
+                </div>
+            </div>
+            <!-- Image for desktop -->
+            <img src="assets/img/gue.png" alt="Gede Valendra" class="hidden lg:block w-32 h-32 md:w-48 md:h-48 lg:w-[50vh] lg:h-[50vh] bg-white rounded-bl-full rounded-tr-[40px] rounded-br-[5px] rounded-tl-[5px] object-cover shadow-lg">
+        </div>
+    </main>
+    <!-- Main Section 2 -->
+    <main class="position w-full min-h-[100vh] p-[3%] sm:px-[4%] md:px-[6%] lg:px-[10%] flex flex-col gap-4">
+        <div class="skills w-full flex flex-col justify-center items-center gap-5">
+            <h1 class="outlineKece bg-white text-black px-4 py-2 rounded shadow-lg">MY SKILLS</h1>
+            <ul class="inline-flex justify-center items-center gap-5 flex-wrap bg-white max-w-full px-4 py-4 rounded shadow-lg">
+                <li>
+                    <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-html5 p-2 text-orange-500 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="HTML5"></i>
+                </li>
+                <li>
+                    <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-css3 p-2 text-blue-500 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="CSS3"></i>
+                </li>
+                <li>
+                    <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-javascript p-2 text-yellow-400 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="JavaScript"></i>
+                </li>
+                <li>
+                    <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-c-plus-plus p-2 text-blue-700 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="C++"></i>
+                </li>
+                <li>
+                    <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-typescript p-2 text-blue-400 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="TypeScript"></i>
+                </li>
+                <li>
+                    <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-tailwind-css p-2 text-teal-400 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="Tailwind CSS"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-white p-4 rounded shadow-lg flex flex-col gap-4">
+            <h1 class="text-xl lg:text-3xl font-bold">Tentang Saya</h1>
+            <ul class="_ulBagInf- grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <li class="bg-gray-100 p-4 rounded outline outline-black/20 flex flex-col gap-2">
+                    <h2 class="text-sm md:text-base lg:text-lg font-bold">Tentang Saya</h2>
+                    <p class="text-xs md:text-sm lg:text-base">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet sed, illum earum quos
+                        suscipit, dolor quam, labore dolore facilis odit deserunt ea? Sequi, labore laudantium illum
+                        dolor accusamus magni.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus ut odit! Quae
+                        veritatis doloribus assumenda praesentium vero dicta voluptas. Aperiam ex consequatur
+                        voluptates, tempore laudantium odit obcaecati! Exercitationem, ab.
+                    </p>
+                </li>
+                <li class="bg-gray-100 p-4 rounded outline outline-black/20 flex flex-col gap-2">
+                    <h2 class="text-sm md:text-base lg:text-lg font-bold">Tentang Saya</h2>
+                    <p class="text-xs md:text-sm lg:text-base">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet sed, illum earum quos
+                        suscipit, dolor quam, labore dolore facilis odit deserunt ea? Sequi, labore laudantium illum
+                        dolor accusamus magni.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus ut odit! Quae
+                        veritatis doloribus assumenda praesentium vero dicta voluptas. Aperiam ex consequatur
+                        voluptates, tempore laudantium odit obcaecati! Exercitationem, ab.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="relative max-w-[100vh] border-l-4 border-black/20 flex flex-col gap-5">
+            <h1 class="text-xl lg:text-3xl ml-4 font-bold">Pengalaman</h1>
+            <h1 class="text-sm md:text-base lg:text-lg bg-blue-100 ml-4 px-[1rem] py-[0.2rem] w-fit rounded-[100px] outline outline-1 outline-blue-400">INSTITUT TEKNOLOGI SUMATERA</h1>
+             <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Staff Magang HUMAS subdiv Sosial Media - Teknik Informatika ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+             <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Staff Magang KOMINFO subdiv Desain Kreatif - GAMAHIRA ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Koordinator Lapangan First Meet - Teknik Informatika'24 ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Koordinator Lapangan Malam Keakraban - Teknik Informatika'24 ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Desain Kreatif MEBATIN - GAMAHIRA ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Desain Kreatif GGTP - GAMAHIRA ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Desain Kreatif Piodalan - GAMAHIRA ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Operasional DIRENTAHIRA IV - GAMAHIRA ITERA</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <!-- batas -->
+            <h1 class="text-sm md:text-base lg:text-lg bg-blue-100 ml-4  px-[1rem] py-[0.2rem] w-fit rounded-[100px] outline outline-1 outline-blue-400">SMAN 1 SIDOMULYO</h1>
+            <!-- batas -->
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Ketua Pelaksana DIKLAT - PMR SMAN 1 SIDOMULYO</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Sekretaris Gelar Karya Seni & P5 - SMAN 1 SIDOMULYO</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+            <li class="relative left-[-0.6rem] flex items-center gap-2">
+                <span class="p-2 bg-gray-500 rounded-[100%]"></span>
+                <div class="">
+                    <h2 class="font-bold text-sm md:text-base lg:text-lg">Koordinator Medis Kemah - Pramuka SMAN 1 SIDOMULYO</h2>
+                    <p class="text-xs md:text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid fuga, cumque, architecto illum ut eaque exercitationem perferendis sit alias deserunt at. Odio suscipit sunt excepturi est magnam! Architecto, veritatis quaerat!</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div class="w-full h-[30vh] bg-white flex justify-center items-center">
+            <p class="text-sm text-black/50">© 2024 Gede Valendra. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // Array of texts to display near the cursor
+    const texts = [
+        "Halo der!",
+        "Kenalin gua Gede Valendra",
+        "Dari Teknik Informatika ITERA",
+        "Seorang Web Developer",
+        "Dan juga Sebagai Desainer Grafis",
+        "Enjoy der ku!"
+    ];
+
+    let currentIndex = 0;
+    let cursorText = document.createElement('div');
+    cursorText.style.position = 'fixed';
+    cursorText.style.pointerEvents = 'none';
+    cursorText.style.zIndex = '9999';
+    cursorText.style.background = 'rgba(255,255,255,0.9)';
+    cursorText.style.padding = '4px 12px';
+    cursorText.style.borderRadius = '8px';
+    cursorText.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+    cursorText.style.fontSize = '1rem';
+    cursorText.style.fontFamily = 'Luofuchun, sans-serif';
+    cursorText.style.transition = 'opacity 0.2s';
+    cursorText.style.opacity = '0.95';
+    cursorText.innerText = texts[currentIndex];
+    document.body.appendChild(cursorText);
+
+    // Change text every 5 seconds
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % texts.length;
+        cursorText.innerText = texts[currentIndex];
+    }, 4000);
+
+    // Move the text with the cursor
+    document.addEventListener('mousemove', function (e) {
+        cursorText.style.left = (e.clientX + 16) + 'px';
+        cursorText.style.top = (e.clientY + 16) + 'px';
+    });
+</script>
+
 </html>
