@@ -41,6 +41,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            transition: all 0.1s ease-in-out;
         }
 
         body {
@@ -157,13 +158,13 @@
                         </li>
                     </ul>
                 </li>
-                <li class="bg-gray-100 p-4 rounded outline outline-black/20 flex flex-col gap-2">
+                <li class="bg-gray-100 p-4 rounded outline outline-black/20 flex flex-col  gap-2">
                     <div class="flex items-center justify-between">
                         <h2 class="text-sm md:text-base lg:text-lg font-bold text-blue-500 bg-blue-200 outline outline-1 outline-blue-400 w-fit px-4 py-1 rounded">Tech Stack</h2>
                         <span class="text-[10px] text-black/40 flex items-center gap-1">Last updated <i class="bx bx-time"></i> 2024</span>
                     </div>
 
-                <ul class="inline-flex justify-center items-center gap-5 flex-wrap max-w-full px-4 py-4 grid grid-cols-4 lg:grid-cols-8">
+                <ul class="flex justify-center items-center text-center gap-3 flex-wrap max-w-full px-4 py-4 grid grid-cols-4 lg:grid-cols-8">
                     <li>
                         <i class="outlineKece bg-white shadow-lg p-[1%] rounded bx bxl-html5 p-2 text-orange-500 transition-transform duration-200 hover:scale-110 text-4xl md:text-6xl lg:text-7xl" title="HTML5"></i>
                     </li>
@@ -196,16 +197,21 @@
                         <h2 class="text-sm md:text-base lg:text-lg font-bold text-blue-500 bg-blue-200 outline outline-1 outline-blue-400 w-fit px-4 py-1 rounded">Project</h2>
                         <span class="text-[10px] text-black/40 flex items-center gap-1">Last updated <i class="bx bx-time"></i> 2024</span>
                     </div>
-                    <p class="text-xs md:text-sm lg:text-base">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet sed, illum earum quos
-                        suscipit, dolor quam, labore dolore facilis odit deserunt ea? Sequi, labore laudantium illum
-                        dolor accusamus magni.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus ut odit! Quae
-                        veritatis doloribus assumenda praesentium vero dicta voluptas. Aperiam ex consequatur
-                        voluptates, tempore laudantium odit obcaecati! Exercitationem, ab.
-                    </p>
-                    <div class="flex items-center gap-2">
+                    <ul class="grid grid-cols-2 flex flex-col gap-2">
+                        <li class="outline outline-1 outline-black/20 w-fit p-2 rounded flex flex-col gap-2">
+                            <img src="/icon.png" alt="" class="max-w-[200px] w-full rounded bg-black/10">
+                            <h3 class="bg-blue-300 w-fit p-1 text-white px-4 rounded-[100px] text-sm">Web Portfolio</h3>
+                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nulla laborum nisi voluptatum quisquam in incidunt unde? Fugit suscipit sapiente, libero minus, molestias, natus doloremque aliquam nam hic recusandae nesciunt.</p>
+                        </li>
+                         <li class="outline outline-1 outline-black/20 w-fit p-2 rounded flex flex-col gap-2">
+                            <img src="/icon.png" alt="" class="max-w-[200px] w-full rounded bg-black/10">
+                            <h3 class="bg-blue-300 w-fit p-1 text-white px-4 rounded-[100px] text-sm">Web Portfolio</h3>
+                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nulla laborum nisi voluptatum quisquam in incidunt unde? Fugit suscipit sapiente, libero minus, molestias, natus doloremque aliquam nam hic recusandae nesciunt.</p>
+                        </li>
+                    </ul>
+                    <div class="w-full flex justify-between items-center gap-2 outline outline-1 outline-blue-300 p-2 rounded hover:bg-blue-100">
                         <a href="#" class="text-xs w-fit bg-blue-200 text-blue-600 px-3 py-1 rounded outline outline-1 outline-blue-500">View more</a>
+                        <i class="bx bx-chevron-right text-blue-300"></i>
                     </div>
                 </li>
                 <li class="bg-gray-100 p-4 rounded outline outline-black/20 flex flex-col gap-2">
