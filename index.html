@@ -372,13 +372,11 @@
     cursorText.innerText = texts[currentIndex];
     document.body.appendChild(cursorText);
 
-    // Change text every 5 seconds
     setInterval(() => {
         currentIndex = (currentIndex + 1) % texts.length;
         cursorText.innerText = texts[currentIndex];
     }, 4000);
 
-    // Move the text with the cursor
     document.addEventListener('mousemove', function (e) {
         cursorText.style.left = (e.clientX + 16) + 'px';
         cursorText.style.top = (e.clientY + 16) + 'px';
@@ -387,16 +385,16 @@
     // asasasa aasasas asasas
     const navigasiBottom = document.getElementById('navigasiBottom');
     const footerId = document.getElementById('footerId');
+
+    navigasiBottom.style.transition = 'bottom 0.4s cubic-bezier(0.4,0,0.2,1)';
+
     window.addEventListener('scroll', () => {
         if (navigasiBottom && footerId) {
             const footerCoords = footerId.getBoundingClientRect().top;
             const navigasiCoords = navigasiBottom.getBoundingClientRect().top;
-            navigasiBottom.style.opacity = '1';
-            navigasiBottom.style.zIndex = '1000';
+            navigasiBottom.style.bottom = '5vh';
             if (footerCoords - navigasiCoords < 100) {
-                navigasiBottom.style.opacity = '0';
-                navigasiBottom.style.zIndex = '-1000';
-
+                navigasiBottom.style.bottom = '-10vh';
             }
         }
     });
